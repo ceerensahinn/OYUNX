@@ -1,0 +1,54 @@
+/* Ana gövdeyi (body) ayarlar */
+body {
+    display: flex; /* İçerikleri ortalamak için flexbox kullan */
+    justify-content: center; /* Yatay ortalama */
+    align-items: center; /* Dikey ortalama */
+    height: 100vh; /* Ekran yüksekliğini kapla */
+    margin: 0; /* Varsayılan boşlukları kaldır */
+    background-color: #ffcc99; /* Turuncu arka plan rengi */
+    flex-direction: column; /* İçerikleri dikey olarak hizala */
+}
+
+/* Oyun tahtasının stilini ayarlar */
+.oyun-tahtasi {
+    display: grid; /* Izgara düzeni kullan */
+    grid-template-columns: repeat(4, 200px); /* 4 sütundan oluşan bir ızgara, her hücre 100px */
+    gap: 10px; /* Kartlar arasında 10px boşluk */
+}
+
+/* Kartların genel stilini ayarlar */
+.kart {
+    width: 200px; /* Kart genişliği */
+    height: 200px; /* Kart yüksekliği */
+    background-color: #ff6600; /* Kartın arka plan rengi - turuncu */
+    cursor: pointer; /* Kartın üzerine gelince imleç şekli değişir */
+    position: relative; /* İç elemanların konumlandırılabilmesi için */
+    border-radius: 8px; /* Kartın köşelerini yuvarlar */
+    overflow: hidden; /* Kartın sınırlarını aşan görüntüleri gizler */
+}
+
+/* Kart içindeki resimlerin stilini ayarlar */
+.kart img {
+    width: 100%; /* Resmi kartın genişliğine uyarlar */
+    height: 100%; /* Resmi kartın yüksekliğine uyarlar */
+    display: none; /* Başlangıçta resmi gizler */
+    border-radius: 8px; /* Resmin köşelerini yuvarlar */
+}
+
+/* Kart döndürüldüğünde (flipped sınıfı eklenince) resmin görünmesini sağlar */
+.kart.flipped img {
+    display: block; /* Resmi gösterir */
+}
+
+/* Tebrik mesajının stilini ayarlar */
+.tebrik-mesaji {
+    display: none; /* Başlangıçta mesajı gizler */
+    margin-top: 20px; /* Üstten boşluk bırakır */
+    font-size: 24px; /* Yazı boyutunu ayarlar */
+    color: #ff6600; /* Yazı rengini turuncu yapar */
+    font-weight: bold; /* Yazıyı kalın yapar */
+    background-color: white; /* Beyaz arka plan rengi */
+    padding: 10px; /* İç boşluk ekler */
+    border-radius: 8px; /* Köşeleri yuvarlar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Hafif gölge ekler */
+}

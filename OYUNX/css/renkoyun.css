@@ -1,0 +1,59 @@
+/* Genel body ayarları */
+body {
+    font-family: Arial, sans-serif; /* Yazı tipi */
+    background-color: #ffcc99; /* Turuncu arka plan rengi */
+    display: flex; /* İçerikleri ortalamak için flex kullan */
+    justify-content: center; /* Yatay ortalama */
+    align-items: center; /* Dikey ortalama */
+    height: 100vh; /* Ekranın tamamını kapla */
+    margin: 0; /* Varsayılan boşlukları kaldır */
+}
+
+/* Ana kapsayıcı (container) stil ayarları */
+.container {
+    background-color: #fff; /* Beyaz arka plan */
+    padding: 20px; /* İç boşluk */
+    box-shadow: 0 0 10px #ff6600; /* Turuncu gölge */
+    border-radius: 5px; /* Köşeleri yuvarlar */
+}
+.container h1 {
+    color: #ff6600; /* Turuncu yazı rengi */
+    text-align: center; /* Ortalıyor */
+}
+/* Türkçe ve İngilizce etiketleri için stil ayarları */
+#turkce-label,
+#ingilizce-label {
+    color: #ff6600; /* Turuncu yazı rengi */
+    font-weight: bold;
+}
+/* Oyun kapsayıcısı (game-container) stil ayarları */
+#game-container {
+    text-align: center; /* Metinleri ortalar */
+}
+
+/* Renk ve çeviri kutularının stil ayarları */
+#color-box, #translation-box {
+    margin-bottom: 20px; /* Alt boşluk */
+}
+
+/* Metin kutusu ve buton stil ayarları */
+input[type="text"], button {
+    padding: 10px; /* İç boşluk */
+    font-size: 16px; /* Yazı boyutu */
+    border: 1px solid #ff6600; /* Turuncu kenar */
+    border-radius: 5px; /* Köşeleri yuvarlar */
+    width: 200px; /* Genişlik */
+}
+
+/* Buton için özel stil ayarları */
+button {
+    cursor: pointer; /* Fare imleci */
+    background-color: #ff6600; /* Turuncu arka plan rengi */
+    color: white; /* Beyaz yazı rengi */
+    border: none; /* Kenar çizgisi yok */
+}
+
+/* Buton üzerine gelindiğinde (hover) stil ayarları */
+button:hover {
+    background-color: #fc7e2bd8; /* Daha koyu turuncu arka plan rengi */
+}

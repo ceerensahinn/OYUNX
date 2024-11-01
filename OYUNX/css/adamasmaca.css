@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffcc99; /* Turuncu tema */
+}
+
+.anabaslik {
+    font-size: 38px;
+    color: #ff6600;
+    position: absolute;
+    top: 50px;
+    left: 10%;
+
+    transform: translatex(80%);
+    margin: 0;
+}
+
+.oyun-container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+}
+
+h1 {
+    color: #ff6600; /* Turuncu başlık */
+}
+
+.adam {
+    width: 200px;
+    height: 200px;
+    background: url('../gorseller/adamasmacagorsel/adam0.svg') no-repeat center center;
+    background-size: contain;
+    margin: 20px auto;
+}
+
+.kelime-göster {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+input {
+    font-size: 18px;
+    width: 40px;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid #ff6600;
+    border-radius: 5px;
+}
+
+.buton {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.buton:hover {
+    background-color: #e65c00;
+}
+
+.mesaj {
+    font-size: 20px;
+    color: #ff3300;
+}

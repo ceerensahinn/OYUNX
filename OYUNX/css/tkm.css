@@ -1,0 +1,76 @@
+/* Temel stil ayarları */
+body {
+    font-family: Arial, sans-serif; /* Arial yazı tipi kullan */
+    background: url('background.jpg') no-repeat center center fixed; /* Sayfanın arka planına sabit bir resim ekle */
+    background-size: cover; /* Arka planı ekranın tamamına göre kapla */
+    margin: 0; /* Sayfanın dış boşluklarını sıfırla */
+    padding: 0; /* Sayfanın iç boşluklarını sıfırla */
+    height: 100vh; /* Sayfa yüksekliğini ekranın tamamı yap */
+    display: flex; /* Flexbox düzeni kullan */
+    align-items: center; /* Öğeleri dikeyde ortala */
+    justify-content: center; /* Öğeleri yatayda ortala */
+}
+
+/* Ana kapsayıcı kutu stili */
+.container {
+    width: 100%; /* Genişliği yüzde yüz yap */
+    height: 100%; /* Yüksekliği yüzde yüz yap */
+    display: flex; /* Flex düzeni kullan */
+    flex-direction: column; /* Öğeleri dikeyde hizala */
+    align-items: center; /* Öğeleri yatayda ortala */
+    justify-content: center; /* Öğeleri dikeyde ortala */
+    background-color: #ffcc99; /* Arka plan rengini yarı saydam turuncu yap */
+    border-radius: 8px; /* Kenarlara yuvarlaklık ekle */
+    box-shadow: 0 0 15px rgb(213, 55, 20); /* Kutuya gölge ekle */
+    backdrop-filter: blur(10px); /* Arka planı bulanıklaştır */
+}
+
+/* Başlık stili */
+h1 {
+    color: #ff6600; /* Başlık rengini turuncu yap */
+    margin-bottom: 30px; /* Başlık altında boşluk bırak */
+}
+
+/* Seçim düğmeleri kapsayıcısı */
+.choices {
+    display: flex; /* Flex düzeni kullan */
+    gap: 20px; /* Düğmeler arasında boşluk bırak */
+}
+
+/* Seçim düğmeleri stili */
+.choice {
+    width: 150px; /* Düğmenin genişliğini ayarla */
+    height: 150px; /* Düğmenin yüksekliğini ayarla */
+    border: none; /* Kenarlıkları kaldır */
+    border-radius: 8px; /* Kenarları yuvarla */
+    background-color: #ffcc99; /* Turuncu arka plan rengi */
+    cursor: pointer; /* İmleci el simgesine dönüştür */
+    transition: transform 0.2s, box-shadow 0.2s; /* Boyut ve gölge geçişi için animasyon ekle */
+    padding: 0; /* Düğme iç boşluğunu sıfırla */
+    margin: 10px; /* Düğme çevresine boşluk ekle */
+}
+
+/* Seçim düğmelerindeki resimler */
+.choice img {
+    width: 100%; /* Görsel genişliğini düğmenin tamamına yay */
+    height: 100%; /* Görsel yüksekliğini düğmenin tamamına yay */
+    border-radius: 8px; /* Görsel kenarlarını yuvarla */
+    object-fit: cover; /* Görseli düğmeye sığdır */
+}
+
+/* Seçim düğmesi üzerine gelinceki efekt */
+.choice:hover {
+    transform: scale(1.2); /* Üzerine gelindiğinde büyüt */
+    box-shadow: 0 0 15px rgba(214, 81, 19, 0.863); /* Gölgeli efekt ekle */
+}
+
+/* Sonuç alanı stili */
+.result {
+    margin-top: 30px; /* Sonuç alanı üzerinde boşluk bırak */
+}
+
+/* Mesaj stili */
+#mesaj {
+    font-size: 24px; /* Mesaj yazı boyutunu ayarla */
+    color: #ff6600; /* Turuncu mesaj rengi */
+}

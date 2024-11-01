@@ -1,0 +1,217 @@
+/* Genel Ayarlar */
+/* Body ve html genel ayarları; margin ve padding sıfırlanıyor, font ve arka plan rengi ayarlanıyor */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2f;
+    color: #E65100;
+    overflow-x: hidden; /* Yatay kaydırma çubuğunu gizler */
+}
+
+/* Giriş Sayfası */
+/* Giriş sayfasının kapsayıcı sınıfı; merkezi hizalama ve arka plan ayarları */
+.giris-kapsayici {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #F4511E, #FFAB91); /* Gradyan arka plan */
+    color: #fff;
+    animation: gradientBG 15s ease infinite; /* Gradyan animasyonu */
+    background-size: 400% 400%; /* Gradyanın boyutu */
+}
+
+/* Gradyan arka plan animasyonu */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Giriş başlığı ayarları */
+.giris-kapsayici h2 {
+    margin-bottom: 1rem; /* Başlık altındaki boşluk */
+    font-size: 2.5rem; /* Başlık font boyutu */
+}
+
+/* Giriş formu ayarları */
+.giris-kapsayici .form {
+    margin-bottom: 1rem; /* Formun altındaki boşluk */
+}
+
+/* Form etiket ayarları */
+.giris-kapsayici .form label {
+    display: block; /* Etiket blok olarak gösteriliyor */
+    margin-bottom: 0.5rem; /* Alt boşluk */
+}
+
+/* Form input ayarları */
+.giris-kapsayici .form input {
+    width: 100%; /* Genişlik ayarı */
+    padding: 0.5rem; /* İç boşluk */
+    border: none; /* Kenar çizgisi yok */
+    border-radius: 4px; /* Kenar yuvarlama */
+    font-size: 1rem; /* Font boyutu */
+}
+
+/* Giriş butonu ayarları */
+.giris-kapsayici .giris-btn {
+    background-color: #fff; /* Arka plan rengi */
+    color: #DD2C00; /* Font rengi */
+    padding: 0.75rem 1.5rem; /* İç boşluk */
+    border: none; /* Kenar çizgisi yok */
+    border-radius: 4px; /* Kenar yuvarlama */
+    cursor: pointer; /* İmleci işaretçi yapar */
+    font-size: 1.2rem; /* Font boyutu */
+    transition: background-color 0.3s; /* Arka plan rengindeki geçiş efekti */
+}
+
+/* Giriş butonuna hover efekti */
+.giris-kapsayici .giris-btn:hover {
+    background-color: #FF6E40; /* Hover'da arka plan rengi */
+    color: #FF6D00; /* Hover'da font rengi */
+}
+
+/* Ana Sayfa */
+/* Header ayarları; üst kısmın arka planı ve hizalanması */
+header {
+    background: linear-gradient(45deg, #FF8A65, #FF7043); /* Gradyan arka plan */
+    color: #E65100; /* Font rengi */
+    padding: 0.5rem 1rem; /* İç boşluk */
+    text-align: center; /* Ortalanmış metin */
+    position: fixed; /* Sabit konumda */
+    display: flex; /* Flex kutusu */
+    justify-content: space-between; /* Alanı eşit dağıtır */
+    align-items: center; /* Dikey ortalama */
+    line-height: 1.2; /* Satır yüksekliği */
+    height: 50px; /* Yükseklik ayarı */
+}
+
+/* Hoş geldin mesajı ayarları */
+#welcomeMessage {
+    font-size: 0.7rem; /* Font boyutu */
+    border-radius: 15px;
+}.kullanici-menusu {
+    position: relative;
+    border-radius: 15px;
+}
+
+.kullanici-menusu {
+    position: relative;
+    border-radius: 15px;
+}
+
+.kullanici-menusu button {
+    background: none;
+    border: none;
+    color: #E65100; /* Buton rengi */
+    font-size: 1rem; /* Yazı boyutu küçültüldü */
+    cursor: pointer;
+    padding: 0.35rem 0.9rem; /* İçerik etrafındaki boşluk küçültüldü */
+    border-radius: 15px; /* Kenar yuvarlama */
+    transition: background-color 0.3s; /* Hover geçişi */
+}
+
+.kullanici-menusu button:hover {
+    background-color: rgba(255, 110, 64, 0.3); /* Hover rengi */
+}
+
+.kullanici-menusu .acilir-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: #E65100; /* Menü arka plan rengi */
+    color: #FF6D00; /* Menü yazı rengi */
+    padding: 0.5rem; /* Menü içindeki boşluk küçültüldü */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+    border-radius: 15px; /* Kenar yuvarlama */
+    text-align: center;
+    z-index: 10; /* Diğer elemanların üstünde görünmesi için */
+    min-width: 120px; /* Menü genişliği */
+}
+
+.kullanici-menusu .acilir-menu.show {
+    display: block; /* Menü görünürlük ayarı */
+}
+
+.kullanici-menusu .acilir-menu p {
+    margin: 0;
+    font-size: 0.9rem; /* Yazı boyutu küçültüldü */
+    margin-bottom: 0.25rem; /* Alt boşluk küçültüldü */
+    border-radius: 15px;
+}
+
+.kullanici-menusu .acilir-menu button {
+    background-color: #FF6E40; /* Alt menü buton rengi */
+    border: none;
+    color: #fff; /* Yazı rengi */
+    padding: 0.5rem 0.75rem; /* İçerik etrafındaki boşluk küçültüldü */
+    border-radius: 15px; /* Kenar yuvarlama */
+    cursor: pointer;
+    font-size: 0.9rem; /* Yazı boyutu küçültüldü */
+    transition: background-color 0.3s; /* Hover geçişi */
+}
+
+.kullanici-menusu .acilir-menu button:hover {
+    background-color: #FF7043; /* Hover rengi */
+}
+
+/* Ana sayfa içerik ayarları */
+.ana-sayfa {
+    padding: 2rem; /* İç boşluk */
+    text-align: center; /* Ortalanmış metin */
+}
+
+/* Ana sayfa başlık ayarları */
+.ana-sayfa h2 {
+    font-size: 2rem; /* Font boyutu */
+    margin-bottom: 2rem; /* Alt boşluk */
+}
+
+/* Oyun kartları ayarları */
+.oyun-kartlari {
+    display: flex; /* Flex kutusu */
+    flex-wrap: wrap; /* Taşma durumunda sarma */
+    justify-content: center; /* Ortaya hizalama */
+    gap: 2rem; /* Kartlar arasında boşluk */
+    width: 100%; /* Genişlik ayarı */
+    height: 100%; /* Yükseklik ayarı */
+}
+
+/* Oyun kartı ayarları */
+.oyun-karti {
+    background: #FFAB91; /* Arka plan rengi */
+    border: 1px solid #FFAB91; /* Kenar çizgisi */
+    border-radius: 8px; /* Kenar yuvarlama */
+    padding: 1rem; /* İç boşluk */
+    width: 250px; /* Genişlik ayarı */
+    text-align: center; /* Ortalanmış metin */
+    transition: transform 0.3s; /* Dönüşüm efekti */
+    height: auto; /* Yükseklik ayarı */
+}
+
+/* Oyun kartı içindeki resim ayarları */
+.oyun-karti img {
+    width: 100%; /* Genişlik ayarı */
+    height: auto; /* Yükseklik otomatik */
+    border-radius: 8px; /* Kenar yuvarlama */
+}
+
+/* Oyun kartına hover efekti */
+.oyun-karti:hover {
+    transform: scale(1.05); /* Büyütme efekti */
+}
+
+/* Oyna butonu ayarları */
+.oyna-btn {
+    background-color: #FF7043; /* Arka plan rengi */
+    border: none; /* Kenar çizgisi yok */
+    color: #fff; /* Font rengi */
+    padding: 0.75rem 1.5rem; /* İç boşluk */
+    border-radius: 4px; /* Kenar yuvarlama */
+    cursor: pointer; /* İmleci işaretçi yapar */
+    margin-top: 1rem; /* Üst boşluk */
+    font-size: 1rem; /* Font boyutu */
+    transition: background-color 0.3s;} /* Arka plan rengindeki geç

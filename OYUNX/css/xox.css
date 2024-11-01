@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffcc99;
+    font-family: 'Arial', sans-serif;
+    color: #ff6600;
+}
+
+.mod-secim, .puan-tablosu {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff6600;
+}
+
+.puan-tablosu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff6600;
+    background-color: #ffcc99;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.oyun-alani {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tahta {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 0; /* Gaps between cells set to 0 */
+    margin-bottom: 20px;
+}
+
+.hucre {
+    width: 150px;
+    height: 150px;
+    background-color: #ff8c00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: #ffffff;
+    cursor: pointer;
+    border: 2px solid #00ced1; /* Border to separate cells */
+    transition: background-color 0.3s;
+}
+
+.hucre:hover {
+    background-color: #ffb347;
+}
+
+#mesaj {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hucre.x {
+    color: red; /* X için kırmızı */
+}
+
+.hucre.o {
+    color: white; 
+}
+
+/* Ensure no margin around the cells */
+.hucre {
+    margin: 0; /* Ensure no margin around the cells */
+    box-sizing: border-box; /* Ensure border is included in dimensions */
+}
